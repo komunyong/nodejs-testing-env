@@ -4,6 +4,7 @@ Pre-config testing environment for NodeJS Application in ES6 with some package w
 # Usage
 - `npm install` at top-level of project.
 - copy folder `sample-app` and change folder name for your testing project
+- to run testing, go to [your-project] folder and run `npm start`
 - when you done with edit your source code, just `npm start`
 **Notice**: if you are not beginner, you know how to do.
 
