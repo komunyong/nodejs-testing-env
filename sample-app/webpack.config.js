@@ -1,11 +1,10 @@
 module.exports = {
+  target: 'node',
   entry: './index.js',
   output: {
     path: __dirname + '/dist',
     filename: 'app.bundle.js'
   },
-
-  // correct
   module: {
     loaders: [{
       test: /\.js$/,
