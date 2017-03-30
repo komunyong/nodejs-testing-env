@@ -1,12 +1,18 @@
 {
-  "name": "html-comparer",
+  "name": "sample-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack && nodemon dist/app.bundle.js"
+    "start": "webpack && gulp build:deps --cwd ./ --gulpfile gulpfile.babel.js && node dist/app.bundle.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.0",
+    "gulp": "^3.9.1",
+    "gulp-json-editor": "^2.2.1",
+    "lodash": "^4.17.4"
+  }
 }
