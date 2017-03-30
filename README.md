@@ -2,6 +2,7 @@
 Pre-config testing environment for NodeJS Application in ES6 with some package webpack, babel, nodemon. We use for easy clone and test suddenly for ES6 syntax and don't need to config anything even webpack, babel and nodemon.
 
 # Usage
+- install gulp by `npm i gulp -g`
 - `npm install` at top-level of project.
 - copy folder `sample-app` and change folder name for your testing project
 - to run testing, go to [your-project] folder and run `npm start`
