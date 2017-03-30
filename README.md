@@ -14,3 +14,12 @@ Pre-config testing environment for NodeJS Application in ES6 with some package w
 - [Babel](https://babeljs.io/): Javascript Compiler, we used for compile ES6 to ES5 (ES2015).
 - [Babel Loader](https://github.com/babel/babel-loader): plugin for webpack auto build.
 - [Nodemon](https://nodemon.io/): Tracking and autocompile when .
+
+## Why
+- `webpack.config.js` => `target: 'node'` set this to tell webpack that do not touch system module, eg. fs, dns, tls - sometimes it'll error cannot find module when build
+- `webpack.config.js` => `externals: {'[externalModule]': 'commonjs [externalModule]'}, eg. { 'pg-promise': 'commonjs pg-promise } - tell webpack to ignore all this module, prevent some module is break while bundle.
+- [commonjs](http://www.commonjs.org/) is used for support
+  - Server-side JavaScript applications
+  - Command line tools
+  - Desktop GUI-based applications
+  - Hybrid applications (Titanium, Adobe AIR)
